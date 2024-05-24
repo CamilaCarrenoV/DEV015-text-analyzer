@@ -28,7 +28,7 @@ body {
 
 }
 
-textarea[name] {
+textarea[name="user-input"] {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
     background-color: #ffffff;
@@ -62,7 +62,7 @@ textarea[name] {
 }
 
 
-button[id="reset-button"] {
+#reset-button {
     font-family: 'Josefin Sans';
     font-size: 100%;
     color:#3e3341;
