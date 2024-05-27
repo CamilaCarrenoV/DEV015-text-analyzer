@@ -1,9 +1,10 @@
 import analyzer from './analyzer.js';
 
 
-const resetearboton = DocumentFragment.getelementById("reset-button")
-resetearboton.addEventListener ("click", function ()) {
-    console.log("botón limpiar texto");
+const resetearboton = document.getElementById("reset-button");
+const texto = document.querySelector("textarea[name='user-input']");
+function limpiar() {
+    texto.value = "";
+}
 
-
-//TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
+resetearboton.addEventListener("click", limpiar);
