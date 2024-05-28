@@ -2,9 +2,18 @@ import analyzer from './analyzer.js';
 
 
 const resetearboton = document.getElementById("reset-button");
-const texto = document.querySelector("textarea[name='user-input']");
+const textarea = document.querySelector("textarea[name='user-input']");
 function limpiar() {
-    texto.value = "";
+    textarea.value = "";
 }
-
+function actualizar() {
+  console.log("estoy en la funcion actualizar"); 
+  let texto = textarea.value;
+  let caracteres = analyzer.getCharacterCount(texto);
+  console.log("texto", texto);
+  console.log("caracteres:", caracteres);
+}
 resetearboton.addEventListener("click", limpiar);
+
+textarea.addEventListener("input", actualizar);
+
