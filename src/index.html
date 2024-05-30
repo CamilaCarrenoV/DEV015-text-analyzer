@@ -13,7 +13,6 @@
 </head>
 
 <body>
-  <script src="index.js" type="module"></script>
 
   <header>
     <h1>Analizador de texto</h1>
@@ -22,12 +21,12 @@
   <main>
     <h2>poner una explicación para que el usuario sepa lo que hay que hacer</h2>
     <ul>
-      <li class="item">Palabras:</li>
-      <li class="item">Caracteres:</li>
-      <li class="item">Caracteres sin espacio:</li>
-      <li class="item">números:</li>
-      <li class="item">suma números:</li>
-      <li class="item"> promedio longitud:</li>
+      <li class="item" data-testid="word-count">Palabras:</li>
+      <li class="item" data-testid="character-count">Caracteres:</li>
+      <li class="item" data-testid="character-no-spaces-count">Caracteres sin espacio:</li>
+      <li class="item" data-testid="number-count">números:</li>
+      <li class="item" data-testid="number-sum">suma números:</li>
+      <li class="item" data-testid="word-length-average"> promedio longitud:</li>
     </ul>
 
     <textarea name="user-input" placeholder="Escribe tu texto aquí"></textarea>
@@ -39,6 +38,7 @@
     <p>Camila Carrreño Valdés</p>
   </footer>
 
+  <script src="index.js" type="module"></script>
 </body>
 
 </html>
