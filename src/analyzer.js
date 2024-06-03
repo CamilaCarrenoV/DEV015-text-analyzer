@@ -33,7 +33,9 @@ const analyzer = {
   },
 
   getNumberSum: (text) => {
-    
+    const regex = /\d+/g;
+    const numeros = text.match(regex);
+    return numeros ? numeros.map(Number).reduce((a, b) => a + b, 0) : 0;
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
   },
 
