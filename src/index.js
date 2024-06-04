@@ -6,12 +6,14 @@ const caracteressinespacio = document.querySelector(".item[data-testid='characte
 const numeros = document.querySelector(".item[data-testid='number-count']");
 const sumanumeros = document.querySelector(".item[data-testid=number-sum]");
 const longitudpalabras = document.querySelector(".item[data-testid='word-length-average']");
-const resetearboton = document.getElementById("reset-button");
-const textarea = document.querySelector("textarea[name='user-input']");
 
+const resetearboton = document.getElementById("reset-button");
+
+const textarea = document.querySelector("textarea[name='user-input']");
 
 function actualizar() {
   let texto = textarea.value;
+
   let numerocaracteres = analyzer.getCharacterCount(texto);
   caracteres.innerHTML = "Caracteres: " + numerocaracteres;
 
@@ -25,14 +27,20 @@ function actualizar() {
   numeros.innerHTML = "Números: " + conteonumeros;
 
   let sumatotalnumeros = analyzer.getNumberSum(texto);
-  sumanumeros.innerHTML = "Suma números: " + sumatotalnumeros;
+  sumanumeros.innerHTML = "Suma de números: " + sumatotalnumeros;
 
   let longitudmediapalabras = analyzer.getAverageWordLength(texto);
-  longitudpalabras.innerHTML = "promedio longuitud: " + longitudmediapalabras;
+  longitudpalabras.innerHTML = "Promedio de longuitud de palabras: " + longitudmediapalabras;
 };
 
 function limpiar() {
   textarea.value = "";
+  caracteres.innerHTML = "Caracteres: ";
+  palabras.innerHTML = "Palabras: ";
+  caracteressinespacio.innerHTML = "Caracteres sin espacio: ";
+  numeros.innerHTML = "Números: ";
+  sumanumeros.innerHTML = "Suma de números: ";
+  longitudpalabras.innerHTML = "Promedio de longuitud de palabras: ";
 }
 
 textarea.addEventListener("input", actualizar);

@@ -5,7 +5,7 @@ html {
 }
 
 header {
-    background-color:#ada7c9;
+    background-color:#cbc6e3;
     color: #3e3341;
     text-align: center;
     padding: 10px 0;
@@ -70,7 +70,7 @@ textarea[name="user-input"] {
     height: 50px;
     display: block;
     margin: auto;
-    background-color: #d7b9d5;
+    background-color: #ffffff;
     border:2px;
     border-color: #ada7c9;
     border-style: solid;
@@ -81,11 +81,11 @@ textarea[name="user-input"] {
 footer {
     text-align: right;
     color: #3e3341;
-    background-color:#ada7c9;
+    background-color: #cbc6e3;
     padding:16px;
 }
 
 main{
-height: 700px;
+height: 600px;
 padding: 64px;
 }
