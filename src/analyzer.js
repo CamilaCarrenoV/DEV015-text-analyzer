@@ -23,18 +23,11 @@ const analyzer = {
   },
 
   getAverageWordLength: (text) => {
-    const nuevotexto = text.replace(/[^a-zA-Z0-9]/g,"")
-    const caractotal = nuevotexto.length;
-    const word = text.split(/\s+/);
-    const totalpalabr = word.length;
-    
-    if (totalpalabr === 0) {
-      return 0;
-    }
-    const promedio = caractotal / totalpalabr;
-    return promedio.toFixed(2);
-
-    //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
+    const TotalPalabras = text.split(" ");
+    const TotalCaracteres = text.replace(/\s+/g, "").length;
+    const Promedio = TotalCaracteres / TotalPalabras.length;
+    return Number(Promedio.toFixed(2));
+    //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`
   },
 
   getNumberCount: (text) => {
