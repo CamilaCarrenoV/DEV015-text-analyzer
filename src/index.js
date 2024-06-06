@@ -12,26 +12,26 @@ const resetearboton = document.getElementById("reset-button");
 const textarea = document.querySelector("textarea[name='user-input']");
 
 function actualizar() {
-  let texto = textarea.value;
+  const texto = textarea.value;
 
-  let numerocaracteres = analyzer.getCharacterCount(texto);
+  const numerocaracteres = analyzer.getCharacterCount(texto);
   caracteres.innerHTML = "Caracteres: " + numerocaracteres;
 
-  let numeropalabras = analyzer.getWordCount(texto);
+  const numeropalabras = analyzer.getWordCount(texto);
   palabras.innerHTML = "Palabras: " + numeropalabras;
 
-  let numerocaractessinespacio = analyzer.getCharacterCountExcludingSpaces(texto);
+  const numerocaractessinespacio = analyzer.getCharacterCountExcludingSpaces(texto);
   caracteressinespacio.innerHTML = "Caracteres sin espacio: " + numerocaractessinespacio;
 
-  let conteonumeros = analyzer.getNumberCount(texto);
+  const conteonumeros = analyzer.getNumberCount(texto);
   numeros.innerHTML = "Números: " + conteonumeros;
 
-  let sumatotalnumeros = analyzer.getNumberSum(texto);
+  const sumatotalnumeros = analyzer.getNumberSum(texto);
   sumanumeros.innerHTML = "Suma de números: " + sumatotalnumeros;
 
-  let longitudmediapalabras = analyzer.getAverageWordLength(texto);
+  const longitudmediapalabras = analyzer.getAverageWordLength(texto);
   longitudpalabras.innerHTML = "Promedio de longuitud de palabras: " + longitudmediapalabras;
-};
+}
 
 function limpiar() {
   textarea.value = "";
