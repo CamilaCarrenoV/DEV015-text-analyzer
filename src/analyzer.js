@@ -1,6 +1,9 @@
 const analyzer = {  
   getWordCount: (text) => {
     let palabras = text.trim().split(/\s+/);
+    if(palabras[0].length === 0){
+      return 0;
+    }
     return palabras.length;
   },
 
@@ -49,7 +52,7 @@ const analyzer = {
 
      if (numeros) {
         for (let i = 0; i < numeros.length; i++) {
-            suma += Number(numeros[i]); // Convertir cada string a número y sumarlo
+            suma += Number(numeros[i]); 
         }
     }
     return suma;
