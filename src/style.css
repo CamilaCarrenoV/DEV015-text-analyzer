@@ -5,18 +5,27 @@ html {
 }
 
 header {
-    background-color:#ada7c9;
+    background-color:#cbc6e3;
     color: #3e3341;
-    text-align: center;
-    padding: 10px 0;
+    text-align: left;
+    padding: 10px;
+    margin: 0 200 px;
 
+}
+p {
+    text-align: left;
+    font-size: 125%;
+    margin: 10px 200px;
 }
 
 h1 {
     font-family: 'Staatliches';
-    font-size: 250%;
+    font-size: 300%;
     font-weight: 400;
     font-style: normal;
+    text-align: left;
+    padding: 10px;
+    margin: 0 200px;
 }
 
 body {
@@ -28,7 +37,7 @@ body {
 
 }
 
-textarea[name] {
+textarea[name="user-input"] {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
     background-color: #ffffff;
@@ -49,7 +58,7 @@ textarea[name] {
 
 .item {
     text-align: center;
-    display: inline-block;
+    display:inline-block;
     margin-top: 45px;
     background-color:#ffffff;
     border:2px;
@@ -62,7 +71,7 @@ textarea[name] {
 }
 
 
-button[id="reset-button"] {
+#reset-button {
     font-family: 'Josefin Sans';
     font-size: 100%;
     color:#3e3341;
@@ -70,7 +79,7 @@ button[id="reset-button"] {
     height: 50px;
     display: block;
     margin: auto;
-    background-color: #d7b9d5;
+    background-color: #ffffff;
     border:2px;
     border-color: #ada7c9;
     border-style: solid;
@@ -81,11 +90,11 @@ button[id="reset-button"] {
 footer {
     text-align: right;
     color: #3e3341;
-    background-color:#ada7c9;
+    background-color: #cbc6e3;
     padding:16px;
 }
 
 main{
-height: 700px;
+height: 600px;
 padding: 64px;
 }
