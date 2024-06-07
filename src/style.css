@@ -16,6 +16,7 @@ p {
     text-align: left;
     font-size: 125%;
     margin: 10px 200px;
+
 }
 
 h1 {
@@ -54,6 +55,12 @@ textarea[name="user-input"] {
     margin-bottom: 32px;
     margin-top:52px;
 
+}
+
+ul {
+display: grid;
+grid-template-columns: 15em 15em 15em;
+justify-content: center;
 }
 
 .item {

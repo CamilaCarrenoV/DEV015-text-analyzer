@@ -37,6 +37,9 @@ Leí documentación sobre querySelector y la importancia de los selectores de cs
 
 ## 3° sprint
 
-Durante este tercer sprint, y luego de tres OH, logré comprender que es el DOM y como 
+Durante este tercer sprint, y luego de tres OH, logré comprender que es el DOM y como logré comprender que es el DOM y la lógica de las funciones del analyzer. Arreglé errores en los test y finalicé el proyecto
 
+## Presentación del proyecto
+Mi analizador de texto fue realizado pensando en que mujeres estudiantes podrían hacer uso de él, es por eso uso paleta de colores moradas. El analizador de texto cuenta palabras, caracteres y números. Además realiza suma de los números que puedan escribir en el area de texto y también analiza las métricas de las palabras.
+Este analizador no cuenta los espacios como palabras, considera números enteros y decimales, y como ultimo detalle, no considera los números que estén junto a una cadena de caracteres. 
 
